@@ -3,11 +3,13 @@ import Footer from "../../components/footer";
 export default function Recommendations() {
   return (
     <div>
-      <div className="heading"></div>
+      <div className="heading">
+
       <p>OUR PROUD CUSTOMERS ARE WILLING TO SHARE THEIR STORIES</p>
       <p>THEY HAD 0NE TICKET FROM US AND CAME BACK FOR MORE</p>
       <p>WE WOULD LOVE TO SEE YOUR FACE AMONG THEM</p>
       <hr></hr>
+      </div>
       <div>
         <section className="recommend">
           <h1> DAVID ALLEN</h1>
