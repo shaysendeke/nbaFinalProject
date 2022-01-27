@@ -13,7 +13,7 @@
 
 .about {
     border: solid black 1.5px;
-    box-shadow: 5px, 5px black;
+    filter:drop-shadow(5px, 5px black); 
     padding: 20px;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

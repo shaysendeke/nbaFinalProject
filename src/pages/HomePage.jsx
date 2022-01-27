@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Logos from '../components/Logos'
 import Footer from "../components/footer";
-
+import ReactPlayer from "react-player";
 
 
 export default function HomePage() {
@@ -19,7 +19,7 @@ export default function HomePage() {
       <div>
       <h1>WELCOME TO SENDEKTICKETS</h1> 
       <h2>WHERE YOU CAN GET THE BEST SEATS WITH THE BEST PRICES</h2>
-      <iframe width="100%" height="506" src="https://www.youtube.com/embed/Hu146YAYAgo" title="YouTube video player" frameborder="0" allow="accelerometer; ; clipboard-write; encrypted-media; gyroscope; picture-in-picture; " allowfullscreen loop autoplay></iframe>
+      <iframe width="100%" height="506" src="https://www.youtube.com/embed/Hu146YAYAgo" title="video" frameBorder="0" allow=" encrypted-media;  " autoPlay allowFullScreen loop ></iframe>
           {/* <video src="" autoPlay loop width="100%"></video> */}
       <hr />
       <div className="about">
