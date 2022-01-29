@@ -6,6 +6,12 @@ export default function ContactUs() {
   const [email, setEmail]=useState()
   const [message, setMessage]=useState()
 
+  const obj ={
+    email: email,
+    fisrtName: firstName,
+    lastName :lastName
+  }
+
 
   return( 
   <div>
@@ -14,7 +20,7 @@ export default function ContactUs() {
       <form 
       onSubmit={(e) => {
         e.preventDefault();
-        console.log(firstName, lastName, email, message);
+        console.log(firstName, lastName, email, message, obj);
         ;
       }}
       >
