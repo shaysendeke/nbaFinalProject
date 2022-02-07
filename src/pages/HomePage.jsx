@@ -35,7 +35,6 @@ export default function HomePage() {
             <Logos/>
         </section>      
 
-        <Footer/>
       </div>
       )
     

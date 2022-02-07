@@ -9,7 +9,8 @@ export default function ContactUs() {
   const obj ={
     email: email,
     fisrtName: firstName,
-    lastName :lastName
+    lastName :lastName,
+    message: message
   }
 
 
@@ -29,7 +30,7 @@ export default function ContactUs() {
           <input placeholder="email"onChange={(e) => setEmail(e.target.value)}></input><br /><br />
           <textarea rows="25" cols="50" placeholder="message" onChange={(e) => setMessage(e.target.value)}/><br />
           <input type="submit"/>
-<Footer/>
+
       </form>
 
   </div>)

@@ -19,6 +19,12 @@ import axios from "axios";
 import FullGameInfo from "./pages/FullGameInfo";
 import FlightsColab from "./pages/FlightsColab";
 import Tickets from "./pages/Tickets";
+import Purchase from "./pages/Purchase";
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import Footer from "./components/footer";
+// import 'sweetalert2/src/sweetalert2.scss'
+
+
 const apiKey =
   "3985477450bdec29762ee1b05f70d7ff8485aee50f4b5c5f55dd13e25224d95b";
 const clientId = " MjU0MDg2NTN8MTY0MjU5MDE1NC4xNTEwNjk5";
@@ -31,6 +37,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [games, setGames] = useState([]);
   const [selectedGame, setSelectedGame] = useState();
+  const [price, setPrice] = useState("")
 
  const onSetSelectedGame = (game) =>{
   setSelectedGame(game)
@@ -59,12 +66,16 @@ function App() {
             render={() => <Search games={games} setSelectedGame={onSetSelectedGame} />}></Route>
           <Route exact path="/FlightsColab" render={()=><FlightsColab />}></Route>
           <Route exact path="/FullGame" render={()=> <FullGameInfo games={games} setGames={setGames} selectedGame={selectedGame} setSelectedGame={setSelectedGame}/>}></Route>
-          <Route exact path="/Tickets" render={()=> <Tickets  selectedGame={selectedGame} setSelectedGame={setSelectedGame}/>}></Route>
+          <Route exact path="/Tickets" render={()=> <Tickets  selectedGame={selectedGame} setSelectedGame={setSelectedGame} price={price} setPrice={setPrice}/>}></Route>
+          <Route exact path="/Purchase" render={()=> <Purchase  selectedGame={selectedGame} setSelectedGame={setSelectedGame} price={price} setPrice={setPrice}/>}></Route>
 
         </Switch>
-
+        
+      <Footer />
       </div>
+
     </BrowserRouter>
+    
   );
 }
 
